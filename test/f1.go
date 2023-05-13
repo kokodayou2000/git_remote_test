@@ -1,7 +1,11 @@
 package test
 
-import "fmt"
+// 接口
+type alive interface {
+	walk()
+}
 
-func do() {
-	fmt.Printf("do do do ")
+type People struct {
+	name string
+	id   string
 }
